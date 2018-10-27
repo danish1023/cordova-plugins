@@ -73,5 +73,15 @@ function callMe() {
   }
 }
 function flashLight() {
-  window.plugins.flashlight.toggle();
+  window.plugins.flashlight.available(function(isAvailable) {
+    if (isAvailable) {
+      window.plugins.flashlight.toggle(
+        function() {}, // optional success callback
+        function() {}, // optional error callback
+        {intensity: 0.3} // optional as well, used on iOS when switching on
+      );
+    } else {
+      window.plugins.toast.show("Flashlight not available on this device", 'long', 'bottom');
+    }
+  });
 }
