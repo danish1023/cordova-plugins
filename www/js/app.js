@@ -87,6 +87,12 @@ function flashLight() {
 }
 function checkHeadset() {
   window.HeadsetDetection.detect(function(detected) {
-    window.plugins.toast.show(detected, 'long', 'bottom');
+    if(detected == true){
+      var message = 'Detected';
+    }
+    else{
+      var message = 'Not Detected';
+    }
+    window.plugins.toast.show(message, 'long', 'bottom');
   });
 }
