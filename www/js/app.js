@@ -65,10 +65,13 @@ function showScanner() {
 }
 function callMe() {
   window.plugins.CallNumber.callNumber(onSuccess, onError, "+919267965329", true);
-  function onSuccess(result){
-    window.plugins.toast.show("Success: "+result, 'long', 'bottom');
+  function onSuccess(result) {
+    console.log("Success: " + result);
   }
   function onError(result) {
-    window.plugins.toast.show("Error: "+result, 'long', 'bottom');
+    window.plugins.toast.show("Error: " + result, 'long', 'bottom');
   }
+}
+function flashLight() {
+  window.plugins.flashlight.toggle();
 }
