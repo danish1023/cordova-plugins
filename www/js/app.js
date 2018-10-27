@@ -85,3 +85,8 @@ function flashLight() {
     }
   });
 }
+function checkHeadset() {
+  window.HeadsetDetection.detect(function(detected) {
+    window.plugins.toast.show(detected, 'long', 'bottom');
+  });
+}
