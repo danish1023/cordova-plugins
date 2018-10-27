@@ -63,3 +63,9 @@ function showScanner() {
     }
   );
 }
+function callMe() {
+  window.plugins.CallNumber.callNumber(onSuccess, onError, "+919267965329", true);
+  function onError(result) {
+    window.plugins.toast.show("Error: "+result, 'long', 'bottom');
+  }
+}
