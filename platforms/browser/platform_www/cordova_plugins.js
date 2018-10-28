@@ -39,6 +39,22 @@ module.exports = [
         "clobbers": [
             "window.HeadsetDetection"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-call-number/www/CallNumber.js",
+        "id": "cordova-plugin-call-number.CallNumber",
+        "pluginId": "cordova-plugin-call-number",
+        "clobbers": [
+            "call"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-app-version/www/AppVersionPlugin.js",
+        "id": "cordova-plugin-app-version.AppVersionPlugin",
+        "pluginId": "cordova-plugin-app-version",
+        "clobbers": [
+            "cordova.getAppVersion"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -48,7 +64,9 @@ module.exports.metadata =
     "cordova-plugin-x-toast": "2.7.0",
     "cordova-plugin-native-dialer": "1.0.0",
     "cordova-plugin-flashlight": "3.2.0",
-    "cordova-plugin-headsetdetection": "3.0.0"
+    "cordova-plugin-headsetdetection": "3.0.0",
+    "cordova-plugin-call-number": "1.0.1",
+    "cordova-plugin-app-version": "0.1.9"
 }
 // BOTTOM OF METADATA
 });

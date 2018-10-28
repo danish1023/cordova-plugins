@@ -21,6 +21,12 @@
         },
         "cordova-plugin-headsetdetection": {
             "PACKAGE_NAME": "com.native.plugins"
+        },
+        "cordova-plugin-call-number": {
+            "PACKAGE_NAME": "com.phonegap.plugins"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "com.phonegap.plugins"
         }
     },
     "dependent_plugins": {}

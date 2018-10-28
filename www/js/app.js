@@ -1,5 +1,5 @@
 // Dom7
-var $ = Dom7;
+var $$ = Dom7;
 
 // Theme
 var theme = 'auto';
@@ -73,12 +73,12 @@ function callMe() {
   }
 }
 function flashLight() {
-  window.plugins.flashlight.available(function(isAvailable) {
+  window.plugins.flashlight.available(function (isAvailable) {
     if (isAvailable) {
       window.plugins.flashlight.toggle(
-        function() {}, // optional success callback
-        function() {}, // optional error callback
-        {intensity: 0.3} // optional as well, used on iOS when switching on
+        function () { }, // optional success callback
+        function () { }, // optional error callback
+        { intensity: 0.3 } // optional as well, used on iOS when switching on
       );
     } else {
       window.plugins.toast.show("Flashlight not available on this device", 'long', 'bottom');
@@ -86,13 +86,16 @@ function flashLight() {
   });
 }
 function checkHeadset() {
-  window.HeadsetDetection.detect(function(detected) {
-    if(detected == true){
+  window.HeadsetDetection.detect(function (detected) {
+    if (detected == true) {
       var message = 'Detected';
     }
-    else{
+    else {
       var message = 'Not Detected';
     }
     window.plugins.toast.show(message, 'long', 'bottom');
   });
 }
+
+var version_number = getVersionNumber();
+$$('.version-number').text('Version: ' + version_number);
