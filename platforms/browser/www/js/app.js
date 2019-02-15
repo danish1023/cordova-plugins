@@ -35,6 +35,7 @@ function displayContents(err, text) {
     alert(text);
     QRScanner.show();
     QRScanner.scan(displayContents);
+    QRScanner.show();
   }
 }
 
