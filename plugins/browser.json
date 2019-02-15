@@ -27,6 +27,9 @@
         },
         "cordova-plugin-app-version": {
             "PACKAGE_NAME": "com.phonegap.plugins"
+        },
+        "cordova-plugin-qrscanner": {
+            "PACKAGE_NAME": "com.phonegap.plugins"
         }
     },
     "dependent_plugins": {}

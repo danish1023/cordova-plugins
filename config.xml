@@ -25,4 +25,5 @@
     <plugin name="cordova-plugin-flashlight" spec="~3.2.0" />
     <plugin name="cordova-plugin-headsetdetection" spec="~3.0.0" />
     <plugin name="cordova-plugin-app-version" spec="~0.1.9" />
+    <plugin name="cordova-plugin-qrscanner" spec="~2.6.0" />
 </widget>

@@ -55,6 +55,20 @@ module.exports = [
         "clobbers": [
             "cordova.getAppVersion"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+        "id": "cordova-plugin-qrscanner.QRScanner",
+        "pluginId": "cordova-plugin-qrscanner",
+        "clobbers": [
+            "QRScanner"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-qrscanner/src/browser/plugin.min.js",
+        "id": "cordova-plugin-qrscanner.QRScannerProxy",
+        "pluginId": "cordova-plugin-qrscanner",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -66,7 +80,8 @@ module.exports.metadata =
     "cordova-plugin-flashlight": "3.2.0",
     "cordova-plugin-headsetdetection": "3.0.0",
     "cordova-plugin-call-number": "1.0.1",
-    "cordova-plugin-app-version": "0.1.9"
+    "cordova-plugin-app-version": "0.1.9",
+    "cordova-plugin-qrscanner": "2.6.0"
 }
 // BOTTOM OF METADATA
 });

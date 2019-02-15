@@ -2,10 +2,7 @@
 var $$ = Dom7;
 
 // Theme
-var theme = 'auto';
-if (document.location.search.indexOf('theme=') >= 0) {
-  theme = document.location.search.split('theme=')[1].split('&')[0];
-}
+var theme = 'md';
 
 // Init App
 var app = new Framework7({
@@ -30,6 +27,15 @@ var app = new Framework7({
     placementId: 'pltd4o7ibb9rc653x14',
   },
 });
+
+function displayContents(err, text) {
+  if (err) {
+    // an error occurred, or the scan was canceled (error code `6`)
+  } else {
+    // The scan completed, display the contents of the QR code:
+    alert(text);
+  }
+}
 
 // Custom Functions
 function showSpinner() {

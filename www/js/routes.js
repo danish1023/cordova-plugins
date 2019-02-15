@@ -63,6 +63,11 @@ var routes = [
 
   // Components
   {
+    path: '/qr-scanner/',
+    componentUrl: './pages/scan.html',
+    name: 'qr-scanner',
+  },
+  {
     path: '/accordion/',
     url: './pages/accordion.html',
   },
