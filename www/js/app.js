@@ -33,7 +33,7 @@ function displayContents(err, text) {
     alert(JSON.stringify(err));
   } else {
     // The scan completed, display the contents of the QR code:
-    alert(text);
+    alert(JSON.stringify(text));
   }
 }
 
