@@ -26,6 +26,7 @@
         var displayContents = function (err, contents) {
           if (!err) {
             alert(contents);
+            QRScanner.scan(displayContents);
           }
         };
         QRScanner.scan(displayContents);
