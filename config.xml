@@ -17,7 +17,7 @@
     <allow-intent href="geo:*" />
     <icon src="icon.png" />
     <preference name="Orientation" value="portrait" />
-    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="phonegap-version" value="cli-8.1.1" />
     <plugin name="cordova-plugin-spinner" spec="~1.1.0" />
     <plugin name="cordova-plugin-x-toast" spec="~2.7.0" />
     <plugin name="phonegap-plugin-barcodescanner" spec="~8.0.0" />
@@ -25,5 +25,5 @@
     <plugin name="cordova-plugin-flashlight" spec="~3.2.0" />
     <plugin name="cordova-plugin-headsetdetection" spec="~3.0.0" />
     <plugin name="cordova-plugin-app-version" spec="~0.1.9" />
-    <!-- <plugin name="cordova-plugin-qrscanner" spec="~2.6.0" /> -->
+    <plugin name="cordova-plugin-qrscanner" spec="~2.6.0" />
 </widget>
