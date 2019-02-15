@@ -26,6 +26,10 @@
         var displayContents = function (err, contents) {
           if (!err) {
             alert(contents);
+            QRScanner.scan(displayContents);
+          }
+          else {
+            alert('Something went wrong');
             //QRScanner.scan(displayContents);
           }
         };

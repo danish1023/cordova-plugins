@@ -483,3 +483,7 @@ code {
   bottom: 0;
   width: 100%;
 }
+
+#cordova-plugin-qrscanner-video-preview{
+  top:25% !important;
+}
