@@ -23,7 +23,9 @@
       pageInit: function () {
         console.log('scan page init');
         QRScanner.scan(displayContents);
-        QRScanner.show();
+        QRScanner.show(function (status) {
+          alert(status);
+        });
       }
     }
   }
