@@ -81,7 +81,8 @@ module.exports.metadata =
     "cordova-plugin-headsetdetection": "3.0.0",
     "cordova-plugin-call-number": "1.0.1",
     "cordova-plugin-app-version": "0.1.9",
-    "cordova-plugin-qrscanner": "2.6.0"
+    "cordova-plugin-qrscanner": "2.6.0",
+    "cordova-plugin-whitelist": "1.3.3"
 }
 // BOTTOM OF METADATA
 });

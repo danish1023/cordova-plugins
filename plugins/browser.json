@@ -30,6 +30,9 @@
         },
         "cordova-plugin-qrscanner": {
             "PACKAGE_NAME": "com.phonegap.plugins"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.phonegap.plugins"
         }
     },
     "dependent_plugins": {}
