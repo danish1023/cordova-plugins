@@ -30,10 +30,10 @@ var app = new Framework7({
 
 function displayContents(err, text) {
   if (err) {
-    alert(JSON.stringify(err));
+    // display error here
   } else {
-    // The scan completed, display the contents of the QR code:
-    alert(JSON.stringify(text));
+    alert(text);
+    QRScanner.prepare();
   }
 }
 

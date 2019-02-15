@@ -22,7 +22,6 @@
   return {
     on: {
       pageInit: function () {
-        console.log('scan page init');
         //$$('.page .page-previous').css('display', 'none');
         QRScanner.scan(displayContents);
         QRScanner.show(function (status) {
