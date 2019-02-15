@@ -28,12 +28,16 @@ var app = new Framework7({
   },
 });
 
+function scanAgain() {
+  QRScanner.scan(displayContents);
+}
+
 function displayContents(err, text) {
   if (err) {
-    // display error here
+    scanAgain();
   } else {
     alert(text);
-    QRScanner.prepare();
+    scanAgain();
   }
 }
 
