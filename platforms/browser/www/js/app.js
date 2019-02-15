@@ -28,17 +28,6 @@ var app = new Framework7({
   },
 });
 
-function displayContents(err, text) {
-  if (err) {
-    // display error here
-  } else {
-    alert(text);
-    QRScanner.show();
-    QRScanner.scan(displayContents);
-    QRScanner.show();
-  }
-}
-
 // Custom Functions
 function showSpinner() {
   SpinnerPlugin.activityStart("Please wait...");

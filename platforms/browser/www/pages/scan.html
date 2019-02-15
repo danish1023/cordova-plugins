@@ -23,7 +23,13 @@
     on: {
       pageInit: function () {
         //$$('.page .page-previous').css('display', 'none');
+        var displayContents = function (err, contents) {
+          if (!err) {
+            alert(contents);
+          }
+        };
         QRScanner.scan(displayContents);
+        QRScanner.show();
       }
     }
   }
