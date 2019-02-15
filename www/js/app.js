@@ -38,7 +38,7 @@ function displayContents(err, text) {
     scanAgain();
   } else {
     alert(text);
-    scanAgain();
+    //scanAgain();
   }
 }
 
