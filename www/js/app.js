@@ -33,6 +33,8 @@ function displayContents(err, text) {
     // display error here
   } else {
     alert(text);
+    QRScanner.show();
+    QRScanner.scan(displayContents);
   }
 }
 
