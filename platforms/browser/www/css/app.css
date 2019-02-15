@@ -475,3 +475,11 @@ code {
 .page-previous{
   display: none !important;
 }
+
+.qr-visible-block{
+  background: white;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
