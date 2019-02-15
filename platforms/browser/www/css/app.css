@@ -471,3 +471,7 @@ code {
   text-align: center;
   line-height: 100px;
 }
+
+.page-previous{
+  display: none !important;
+}
