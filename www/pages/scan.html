@@ -29,7 +29,9 @@
           }
         };
         QRScanner.scan(displayContents);
-        QRScanner.show();
+        QRScanner.show(function (status) {
+          alert(JSON.stringify(status));
+        });
       }
     }
   }
