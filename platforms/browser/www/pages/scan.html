@@ -24,7 +24,9 @@
       pageInit: function () {
         //$$('.page .page-previous').css('display', 'none');
         QRScanner.scan(displayContents);
-        QRScanner.show();
+        QRScanner.show(function (status) {
+          alert(JSON.stringify(status));
+        });
       }
     }
   }
