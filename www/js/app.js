@@ -30,6 +30,7 @@ var app = new Framework7({
 
 function scanAgain() {
   QRScanner.scan(displayContents);
+  QRScanner.show();
 }
 
 function displayContents(err, text) {
